@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import { Phone, MessageCircle, Menu, X, Sparkles } from "lucide-react";
+import { Phone, MessageCircle, Menu, X, Sparkles, MapPin } from "lucide-react";
 import { BUSINESS_INFO } from "@/data/businessInfo";
 
 export default function Header() {
@@ -50,30 +50,37 @@ export default function Header() {
         Skip to main content
       </a>
 
-      {/* Top micro bar for quick trust signals */}
-      <div className="bg-[#030814] text-slate-300 text-xs border-b border-white/5 py-1.5 px-4 hidden sm:block">
-        <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
-          <div className="flex items-center gap-2">
-            <span className="inline-flex items-center gap-1.5 font-medium text-amber-400">
-              <Sparkles className="w-3.5 h-3.5" aria-hidden="true" />
-              {BUSINESS_INFO.tagline}
+      {/* Top Pre-Header Announcement & Trust Strip - Vibrant High-Visibility Ribbon */}
+      <div className="bg-gradient-to-r from-rose-700 via-rose-600 to-amber-600 text-white text-xs py-2 px-4 shadow-md border-b border-amber-300/40 relative z-50">
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+          {/* Taglines */}
+          <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2 text-white font-bold text-xs sm:text-[13px]">
+            <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-black/25 text-amber-200 border border-white/20 shadow-inner">
+              <Sparkles className="w-3.5 h-3.5 text-amber-300 shrink-0" aria-hidden="true" />
+              <span>Smart Solutions for Your Everyday Needs</span>
             </span>
-            <span className="text-slate-600">•</span>
-            <span className="text-slate-400">
-              {BUSINESS_INFO.subTagline}
+            <span className="hidden sm:inline text-white/80 font-black">•</span>
+            <span className="tracking-wide text-white font-extrabold drop-shadow-sm">
+              Fast • Secure • Trusted Service
             </span>
           </div>
-          <div className="flex items-center gap-4">
-            <span className="text-slate-400 truncate max-w-md">
-              {BUSINESS_INFO.address}
-            </span>
+
+          {/* Full Address & Direct Call Button */}
+          <div className="flex flex-wrap items-center justify-center sm:justify-end gap-2.5 text-xs font-semibold text-white">
+            <div className="flex items-center gap-1.5 bg-black/25 px-2.5 py-1 rounded-lg border border-white/15">
+              <MapPin className="w-3.5 h-3.5 text-amber-300 shrink-0" aria-hidden="true" />
+              <span className="truncate max-w-xs md:max-w-md lg:max-w-lg font-medium text-white/95">
+                Baroi Road, Adeshvar Complex, Near Mahalaxmi Mall, Opposite Sabri Hotel, Mundra - Kutch
+              </span>
+            </div>
+
             <a
               href={BUSINESS_INFO.phoneTel}
-              className="font-semibold text-white hover:text-amber-400 transition-colors inline-flex items-center gap-1.5"
+              className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-white text-slate-950 font-black hover:bg-amber-300 transition-colors shadow-sm shrink-0"
               aria-label={`Call ${BUSINESS_INFO.phoneFormatted}`}
             >
-              <Phone className="w-3 h-3 text-rose-500" aria-hidden="true" />
-              {BUSINESS_INFO.phone}
+              <Phone className="w-3 h-3 text-rose-600" aria-hidden="true" />
+              <span>{BUSINESS_INFO.phone}</span>
             </a>
           </div>
         </div>
