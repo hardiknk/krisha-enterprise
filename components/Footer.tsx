@@ -13,7 +13,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#030712] text-slate-300 border-t border-white/10 pt-16 pb-28 sm:pb-16 relative overflow-hidden">
+    <footer className="bg-[#030712]/90 backdrop-blur-md text-slate-300 border-t border-white/10 pt-16 pb-28 sm:pb-16 relative overflow-hidden">
       {/* Ambient background glow */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[500px] h-[200px] bg-gradient-to-t from-rose-600/10 to-amber-500/10 rounded-full blur-[120px] pointer-events-none" />
 

@@ -62,7 +62,7 @@ export default function WhyUs() {
   return (
     <section
       id="why-us"
-      className="py-20 sm:py-28 bg-[#030814] text-white relative overflow-hidden border-t border-white/5"
+      className="py-20 sm:py-28 bg-[#030814]/80 backdrop-blur-md text-white relative overflow-hidden border-t border-white/5"
       aria-labelledby="why-us-heading"
     >
       {/* Background ambient lighting */}

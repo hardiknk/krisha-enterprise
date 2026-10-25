@@ -18,7 +18,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative pt-8 pb-16 sm:pt-14 sm:pb-24 bg-gradient-to-b from-[#050c1a] via-[#08152e] to-[#050c1a] text-white overflow-hidden"
+      className="relative pt-8 pb-16 sm:pt-14 sm:pb-24 bg-gradient-to-b from-transparent via-[#08152e]/40 to-transparent text-white overflow-hidden"
       aria-labelledby="hero-heading"
     >
       {/* Ambient Atmospheric Lighting Elements */}
