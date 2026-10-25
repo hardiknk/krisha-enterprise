@@ -45,9 +45,15 @@ export const metadata: Metadata = {
     address: true,
   },
   icons: {
-    icon: "/icon.svg",
-    shortcut: "/icon.svg",
-    apple: "/icon.svg",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.png", type: "image/png", sizes: "96x96" },
+      { url: "/icon.svg", type: "image/svg+xml" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: [
+      { url: "/apple-icon.png", sizes: "180x180", type: "image/png" },
+    ],
   },
   openGraph: {
     title: "Krisha Enterprises – Your One-Stop Solution | Mundra - Kutch",
