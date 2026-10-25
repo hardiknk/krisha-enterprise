@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://krishaenterprises.in/sitemap.xml

@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+:root {
+  --navy-950: #071329;
+  --navy-900: #0c1c38;
+  --navy-800: #142a53;
+  --navy-700: #1d3b74;
+  --navy-600: #254d94;
+  --brand-red: #d32f2f;
+  --brand-red-hover: #b71c1c;
+  --brand-yellow: #f59e0b;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.18s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
