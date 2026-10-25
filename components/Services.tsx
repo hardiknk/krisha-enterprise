@@ -167,11 +167,11 @@ export default function Services() {
             <GlowCard
               key={service.id}
               glowColor={getGlowColor(index)}
-              className="bg-[#0a1733]/60 border border-white/10 hover:border-white/20 p-6 flex flex-col justify-between group shadow-xl backdrop-blur-xl"
+              className="bg-[#0a1733]/70 border border-white/10 hover:border-white/20 p-5 sm:p-5.5 flex flex-col justify-between group shadow-xl backdrop-blur-xl"
             >
-              <div className="flex flex-col h-full">
+              <div>
                 {/* Header: Category Badge & Number */}
-                <div className="flex items-center justify-between mb-5">
+                <div className="flex items-center justify-between mb-4">
                   <span className="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md bg-white/5 text-amber-300 border border-white/10">
                     {service.categoryBadge}
                   </span>
@@ -181,7 +181,7 @@ export default function Services() {
                 </div>
 
                 {/* Animated Icon */}
-                <div className="mb-4">
+                <div className="mb-3.5">
                   {renderIcon(service.iconType)}
                 </div>
 
@@ -191,12 +191,12 @@ export default function Services() {
                 </h3>
 
                 {/* Short Description */}
-                <p className="mt-2.5 text-xs sm:text-sm text-slate-300 leading-relaxed">
+                <p className="mt-2 text-xs sm:text-sm text-slate-300 leading-relaxed">
                   {service.shortDescription}
                 </p>
 
-                {/* Bullet Highlights */}
-                <ul className="mt-4 space-y-1.5 pt-3 border-t border-white/5 flex-1">
+                {/* Bullet Highlights - Compact without dead empty space */}
+                <ul className="mt-3.5 space-y-1.5 pt-3 border-t border-white/5">
                   {service.highlights.map((highlight, hIdx) => (
                     <li
                       key={hIdx}
@@ -209,31 +209,29 @@ export default function Services() {
                 </ul>
               </div>
 
-              {/* Action Buttons */}
-              <div className="mt-6 pt-4 border-t border-white/10 space-y-2">
+              {/* Action Buttons - Compact Side-by-Side to eliminate trailing space */}
+              <div className="mt-4 pt-3.5 border-t border-white/10 flex items-center gap-2">
                 <a
                   href={`https://wa.me/917600468552?text=${encodeURIComponent(
                     service.whatsappMessage
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full inline-flex items-center justify-between px-4 py-2.5 rounded-xl bg-gradient-to-r from-emerald-500/20 to-emerald-400/20 hover:from-emerald-500/30 hover:to-emerald-400/30 text-emerald-300 font-bold text-xs transition-colors border border-emerald-500/40 focus:outline-none focus:ring-2 focus:ring-emerald-400"
+                  className="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2.5 rounded-xl bg-gradient-to-r from-emerald-500/20 to-emerald-400/20 hover:from-emerald-500/30 hover:to-emerald-400/30 text-emerald-300 font-bold text-xs transition-colors border border-emerald-500/40 focus:outline-none focus:ring-2 focus:ring-emerald-400"
                   aria-label={`Inquire about ${service.title} on WhatsApp`}
                 >
-                  <span className="inline-flex items-center gap-2">
-                    <MessageCircle className="w-4 h-4 fill-current text-emerald-400" />
-                    Inquire on WhatsApp
-                  </span>
-                  <ArrowRight className="w-3.5 h-3.5" />
+                  <MessageCircle className="w-3.5 h-3.5 fill-current text-emerald-400 shrink-0" />
+                  <span>WhatsApp</span>
+                  <ArrowRight className="w-3 h-3 text-emerald-400" />
                 </a>
 
                 <a
                   href={BUSINESS_INFO.phoneTel}
-                  className="w-full inline-flex items-center justify-center gap-1.5 px-3.5 py-2 rounded-xl bg-white/5 hover:bg-white/10 text-slate-300 font-bold text-xs transition-colors border border-white/10 focus:outline-none focus:ring-2 focus:ring-white"
-                  aria-label={`Call 7600468552 for ${service.title}`}
+                  className="inline-flex items-center justify-center gap-1.5 px-3.5 py-2.5 rounded-xl bg-white/5 hover:bg-white/10 text-slate-300 font-bold text-xs transition-colors border border-white/10 focus:outline-none focus:ring-2 focus:ring-white shrink-0"
+                  aria-label={`Call ${BUSINESS_INFO.phone} for ${service.title}`}
                 >
                   <Phone className="w-3.5 h-3.5 text-rose-400" />
-                  Call {BUSINESS_INFO.phone}
+                  <span>Call</span>
                 </a>
               </div>
             </GlowCard>

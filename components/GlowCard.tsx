@@ -7,6 +7,7 @@ interface GlowCardProps {
   className?: string;
   glowColor?: "red" | "gold" | "blue" | "emerald";
   onClick?: () => void;
+  scaleOnHover?: number;
 }
 
 export default function GlowCard({
@@ -14,6 +15,7 @@ export default function GlowCard({
   className = "",
   glowColor = "red",
   onClick,
+  scaleOnHover = 1.045,
 }: GlowCardProps) {
   const cardRef = useRef<HTMLDivElement>(null);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
@@ -29,17 +31,17 @@ export default function GlowCard({
   };
 
   const glowStyles = {
-    red: "rgba(225, 29, 72, 0.18)",
-    gold: "rgba(245, 158, 11, 0.18)",
-    blue: "rgba(37, 99, 235, 0.18)",
-    emerald: "rgba(16, 185, 129, 0.18)",
+    red: "rgba(225, 29, 72, 0.22)",
+    gold: "rgba(245, 158, 11, 0.22)",
+    blue: "rgba(37, 99, 235, 0.22)",
+    emerald: "rgba(16, 185, 129, 0.22)",
   };
 
   const borderHighlightStyles = {
-    red: "rgba(225, 29, 72, 0.4)",
-    gold: "rgba(245, 158, 11, 0.4)",
-    blue: "rgba(59, 130, 246, 0.4)",
-    emerald: "rgba(52, 211, 153, 0.4)",
+    red: "rgba(225, 29, 72, 0.55)",
+    gold: "rgba(245, 158, 11, 0.55)",
+    blue: "rgba(59, 130, 246, 0.55)",
+    emerald: "rgba(52, 211, 153, 0.55)",
   };
 
   return (
@@ -49,9 +51,15 @@ export default function GlowCard({
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       onClick={onClick}
-      className={`relative rounded-2xl overflow-hidden transition-all duration-300 ${className}`}
+      className={`relative rounded-2xl overflow-hidden transition-all duration-300 ease-out will-change-transform ${className}`}
       style={{
-        transform: isHovered ? "translateY(-4px)" : "translateY(0px)",
+        transform: isHovered
+          ? `translateY(-6px) scale(${scaleOnHover})`
+          : "translateY(0px) scale(1)",
+        zIndex: isHovered ? 20 : 1,
+        boxShadow: isHovered
+          ? "0 20px 40px -10px rgba(0, 0, 0, 0.8), 0 0 25px -2px rgba(255, 255, 255, 0.08)"
+          : "0 10px 25px -5px rgba(0, 0, 0, 0.3)",
       }}
     >
       {/* Interactive mouse follow gradient */}
@@ -75,7 +83,7 @@ export default function GlowCard({
       />
 
       {/* Content wrapper */}
-      <div className="relative z-10 h-full">{children}</div>
+      <div className="relative z-10">{children}</div>
     </div>
   );
 }
