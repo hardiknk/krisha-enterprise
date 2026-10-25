@@ -4,11 +4,7 @@ import React, { useState, useEffect } from "react";
 import { Phone, MessageCircle, Menu, X, ShieldCheck } from "lucide-react";
 import { BUSINESS_INFO } from "@/data/businessInfo";
 
-export default function Header({
-  onOpenPoster,
-}: {
-  onOpenPoster?: () => void;
-}) {
+export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -62,8 +58,8 @@ export default function Header({
             </span>
           </div>
           <div className="flex items-center gap-4">
-            <span className="text-slate-300">
-              Mundra - Kutch, Gujarat
+            <span className="text-slate-300 truncate max-w-md">
+              {BUSINESS_INFO.address}
             </span>
             <a
               href={BUSINESS_INFO.phoneTel}
@@ -120,15 +116,6 @@ export default function Header({
                   {link.label}
                 </a>
               ))}
-              {onOpenPoster && (
-                <button
-                  type="button"
-                  onClick={onOpenPoster}
-                  className="text-xs font-medium text-slate-300 hover:text-white bg-[#142a53] hover:bg-[#1d3b74] px-3 py-1.5 rounded-full border border-slate-700 transition-colors"
-                >
-                  View Poster
-                </button>
-              )}
             </nav>
 
             {/* Desktop CTAs */}
@@ -198,18 +185,6 @@ export default function Header({
                   {link.label}
                 </a>
               ))}
-              {onOpenPoster && (
-                <button
-                  type="button"
-                  onClick={() => {
-                    handleNavClick();
-                    onOpenPoster();
-                  }}
-                  className="w-full text-left px-3 py-2.5 rounded-lg text-base font-semibold text-amber-300 hover:bg-[#0c1c38] transition-colors"
-                >
-                  View Original Poster
-                </button>
-              )}
             </div>
 
             <div className="pt-3 border-t border-slate-800 space-y-2">
@@ -233,9 +208,9 @@ export default function Header({
               </a>
             </div>
 
-            <div className="text-center pt-2">
-              <p className="text-xs text-slate-400">
-                {BUSINESS_INFO.addressCity} • {BUSINESS_INFO.tagline}
+            <div className="text-center pt-2 px-2">
+              <p className="text-xs text-slate-400 leading-relaxed">
+                {BUSINESS_INFO.address} • {BUSINESS_INFO.tagline}
               </p>
             </div>
           </div>

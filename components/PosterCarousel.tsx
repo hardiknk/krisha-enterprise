@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState, useEffect, useRef, useCallback } from "react";
-import Image from "next/image";
 import {
   ChevronLeft,
   ChevronRight,
@@ -16,24 +15,17 @@ import {
   Smartphone,
   ShieldCheck,
   MapPin,
-  Maximize2,
 } from "lucide-react";
 import { BUSINESS_INFO } from "@/data/businessInfo";
 
-interface PosterCarouselProps {
-  onOpenOriginalPoster?: () => void;
-}
-
-export default function PosterCarousel({
-  onOpenOriginalPoster,
-}: PosterCarouselProps) {
+export default function PosterCarousel() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const touchStartX = useRef<number | null>(null);
   const touchEndX = useRef<number | null>(null);
   const carouselRef = useRef<HTMLDivElement>(null);
 
-  const totalSlides = 4; // 3 poster-style HTML/CSS slides + 1 actual printed poster slide
+  const totalSlides = 3; // 3 clean poster-style HTML/CSS slides (no raw images)
 
   const nextSlide = useCallback(() => {
     setCurrentSlide((prev) => (prev + 1) % totalSlides);
@@ -225,7 +217,7 @@ export default function PosterCarousel({
                 <div className="mt-4 pt-3 border-t border-slate-800 text-[11px] sm:text-xs text-slate-300 flex items-center justify-center gap-1.5 text-center px-1">
                   <MapPin className="w-3.5 h-3.5 text-red-400 shrink-0" />
                   <span className="leading-snug">
-                    Baroi Road, Adeshvar Complex, Near Mahalaxmi Mall, Mundra - Kutch
+                    Baroi Road, Adeshvar Complex, Near Mahalaxmi Mall, Opposite Sabri Hotel, Mundra - Kutch
                   </span>
                 </div>
               </div>
@@ -314,7 +306,7 @@ export default function PosterCarousel({
                   </a>
                 </div>
                 <p className="mt-2 text-[11px] text-slate-400">
-                  Fast • Secure • Trusted Service • Mundra - Kutch
+                  Fast • Secure • Trusted Service • Baroi Road, Adeshvar Complex, Near Mahalaxmi Mall, Opposite Sabri Hotel, Mundra - Kutch
                 </p>
               </div>
             </div>
@@ -402,76 +394,9 @@ export default function PosterCarousel({
                   </a>
                 </div>
                 <p className="mt-2 text-[11px] text-slate-400">
-                  Located at Adeshvar Complex, Baroi Road, Mundra - Kutch
+                  Located at Baroi Road, Adeshvar Complex, Near Mahalaxmi Mall, Opposite Sabri Hotel, Mundra - Kutch
                 </p>
               </div>
-            </div>
-          </div>
-
-          {/* ======================================================= */}
-          {/* SLIDE 4: Official Business Poster View                  */}
-          {/* ======================================================= */}
-          <div
-            className={`w-full max-w-3xl transition-opacity duration-300 ${
-              currentSlide === 3 ? "block opacity-100" : "hidden opacity-0"
-            }`}
-            role="group"
-            aria-roledescription="slide"
-            aria-label="Slide 4 of 4: Official Krisha Enterprises Business Poster"
-            aria-hidden={currentSlide !== 3}
-          >
-            <div className="bg-[#071329] text-white rounded-2xl p-4 sm:p-6 shadow-xl border border-[#1b3b74] flex flex-col items-center">
-              <div className="flex items-center justify-between w-full mb-3 pb-2 border-b border-slate-800">
-                <div className="text-left">
-                  <span className="text-xs font-bold uppercase tracking-wider text-amber-400 block">
-                    Official Reference
-                  </span>
-                  <h3 className="text-base sm:text-lg font-bold text-white">
-                    Original Krisha Enterprises Poster
-                  </h3>
-                </div>
-                {onOpenOriginalPoster && (
-                  <button
-                    type="button"
-                    onClick={onOpenOriginalPoster}
-                    className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-[#142a53] hover:bg-[#1d3b74] text-xs font-semibold rounded-md text-slate-200 transition-colors"
-                  >
-                    <Maximize2 className="w-3.5 h-3.5" />
-                    Enlarge Poster
-                  </button>
-                )}
-              </div>
-
-              {/* Poster Image Container */}
-              <div
-                className="relative w-full max-w-sm sm:max-w-md aspect-square rounded-xl overflow-hidden shadow-2xl border-2 border-slate-700 bg-black cursor-pointer group"
-                onClick={onOpenOriginalPoster}
-                role="button"
-                tabIndex={0}
-                onKeyDown={(e) => {
-                  if (e.key === "Enter" || e.key === " ") {
-                    onOpenOriginalPoster?.();
-                  }
-                }}
-                aria-label="Click to view full size poster"
-              >
-                <Image
-                  src={BUSINESS_INFO.posterImagePath}
-                  alt="Official Krisha Enterprises Business Poster showing services: Credit Card Bill Payment, Flight/Train/Bus Booking, All Types of Recharge, PF-Related Services"
-                  fill
-                  className="object-contain group-hover:scale-102 transition-transform duration-200"
-                  priority={false}
-                />
-                <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors flex items-center justify-center opacity-0 group-hover:opacity-100">
-                  <span className="bg-slate-900/80 text-white text-xs px-3 py-1.5 rounded-full backdrop-blur-sm">
-                    Click to Enlarge
-                  </span>
-                </div>
-              </div>
-
-              <p className="mt-3 text-xs text-slate-400 text-center">
-                Mundra - Kutch Branch • Phone: {BUSINESS_INFO.phone}
-              </p>
             </div>
           </div>
         </div>
@@ -518,9 +443,7 @@ export default function PosterCarousel({
                     ? "Overview & Tagline"
                     : index === 1
                     ? "Ticketing Booking"
-                    : index === 2
-                    ? "Bill Payment & PF"
-                    : "Original Poster"
+                    : "Bill Payment & PF"
                 }`}
                 onClick={() => goToSlide(index)}
                 className={`h-2.5 rounded-full transition-all focus:outline-none focus:ring-2 focus:ring-amber-400 ${

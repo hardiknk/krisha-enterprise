@@ -5,11 +5,7 @@ import { MessageCircle, Phone, ShieldCheck, MapPin } from "lucide-react";
 import { BUSINESS_INFO } from "@/data/businessInfo";
 import PosterCarousel from "@/components/PosterCarousel";
 
-interface HeroProps {
-  onOpenOriginalPoster?: () => void;
-}
-
-export default function Hero({ onOpenOriginalPoster }: HeroProps) {
+export default function Hero() {
   return (
     <section
       id="hero"
@@ -44,7 +40,7 @@ export default function Hero({ onOpenOriginalPoster }: HeroProps) {
           <p className="mt-4 sm:mt-5 text-base sm:text-lg md:text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
             Fast, secure, and trusted service for your flight, train, and bus
             reservations, credit card payments, all types of recharge, and PF
-            assistance at Baroi Road, Mundra - Kutch.
+            assistance at Baroi Road, Adeshvar Complex, Near Mahalaxmi Mall, Opposite Sabri Hotel, Mundra - Kutch.
           </p>
 
           {/* Primary & Secondary Call to Actions */}
@@ -71,15 +67,15 @@ export default function Hero({ onOpenOriginalPoster }: HeroProps) {
           </div>
 
           {/* Neighborhood Location Indicator */}
-          <div className="mt-4 flex items-center justify-center gap-1.5 text-xs sm:text-sm text-slate-400">
+          <div className="mt-4 flex items-center justify-center gap-1.5 text-xs sm:text-sm text-slate-400 text-center px-2">
             <MapPin className="w-4 h-4 text-red-400 shrink-0" aria-hidden="true" />
-            <span>Adeshvar Complex, Baroi Road, Mundra - Kutch</span>
+            <span>Baroi Road, Adeshvar Complex, Near Mahalaxmi Mall, Opposite Sabri Hotel, Mundra - Kutch</span>
           </div>
         </div>
 
         {/* Poster Carousel Section */}
         <div className="mt-8 sm:mt-10">
-          <PosterCarousel onOpenOriginalPoster={onOpenOriginalPoster} />
+          <PosterCarousel />
         </div>
       </div>
     </section>

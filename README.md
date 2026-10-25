@@ -117,13 +117,12 @@ python3 -m http.server --directory out 8080
 ├── components/
 │   ├── Header.tsx          # Sticky responsive header with wordmark and navigation
 │   ├── Hero.tsx            # Headline, quick contact buttons, and carousel container
-│   ├── PosterCarousel.tsx  # Accessible poster-style carousel with 4 slides
+│   ├── PosterCarousel.tsx  # Accessible 3-slide interactive poster-style carousel (pure HTML/CSS)
 │   ├── Services.tsx        # 4 service cards with direct WhatsApp inquiry actions
-│   ├── About.tsx           # Business identity, tagline values, poster preview
+│   ├── About.tsx           # Business identity, tagline values, and services overview
 │   ├── ContactLocation.tsx # Exact address, click-to-call, directions link, map
 │   ├── Footer.tsx          # Business details, copyright, back-to-top button
-│   ├── FloatingCTA.tsx     # Mobile-first floating bar for WhatsApp & Call
-│   └── PosterModal.tsx     # Fullscreen viewer for official business poster
+│   └── FloatingCTA.tsx     # Mobile-first floating bar for WhatsApp & Call
 ├── data/
 │   └── businessInfo.ts     # Central source of truth for business information
 ├── public/

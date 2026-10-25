@@ -146,7 +146,7 @@ export default function Services() {
               Need assistance with any of these services?
             </h4>
             <p className="text-xs sm:text-sm text-slate-300 mt-1">
-              Contact Krisha Enterprises at Baroi Road, Mundra - Kutch.
+              Contact Krisha Enterprises at {BUSINESS_INFO.address}.
             </p>
           </div>
           <div className="flex items-center gap-3 shrink-0">

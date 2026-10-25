@@ -4,11 +4,7 @@ import React from "react";
 import { Phone, MessageCircle, MapPin, ArrowUp } from "lucide-react";
 import { BUSINESS_INFO } from "@/data/businessInfo";
 
-interface FooterProps {
-  onOpenOriginalPoster?: () => void;
-}
-
-export default function Footer({ onOpenOriginalPoster }: FooterProps) {
+export default function Footer() {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -76,17 +72,6 @@ export default function Footer({ onOpenOriginalPoster }: FooterProps) {
                   Contact &amp; Location
                 </a>
               </li>
-              {onOpenOriginalPoster && (
-                <li>
-                  <button
-                    type="button"
-                    onClick={onOpenOriginalPoster}
-                    className="hover:text-amber-400 transition-colors text-left focus:outline-none focus:underline"
-                  >
-                    View Official Poster
-                  </button>
-                </li>
-              )}
             </ul>
           </div>
 
