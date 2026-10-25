@@ -3,7 +3,6 @@
 import React from "react";
 import Image from "next/image";
 import {
-  Award,
   Zap,
   Lock,
   HeartHandshake,
@@ -26,12 +25,12 @@ export default function About({ onOpenOriginalPoster }: AboutProps) {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
-          {/* Left Column: Text & Experience details */}
+          {/* Left Column: Text & details */}
           <div className="lg:col-span-7">
-            {/* Tagline / Experience Badge */}
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-amber-100 text-amber-900 font-bold text-xs uppercase tracking-wider mb-4 border border-amber-300">
-              <Award className="w-4 h-4 text-amber-700" aria-hidden="true" />
-              <span>{BUSINESS_INFO.experienceClaim}</span>
+            {/* Location Badge */}
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-100 text-slate-800 font-bold text-xs uppercase tracking-wider mb-4 border border-slate-300">
+              <MapPin className="w-4 h-4 text-red-600" aria-hidden="true" />
+              <span>Mundra - Kutch</span>
             </div>
 
             <h2
@@ -50,10 +49,10 @@ export default function About({ onOpenOriginalPoster }: AboutProps) {
             <p className="mt-4 text-base text-slate-600 leading-relaxed">
               Krisha Enterprises is a dedicated neighborhood service business
               located at Adeshvar Complex on Baroi Road in Mundra - Kutch.
-              Backed by {BUSINESS_INFO.experienceClaim}, we assist individuals
-              and families with essential daily transactions including credit card
-              bill payment, flight, train, and bus booking, all types of mobile and
-              DTH recharge, and PF-related services.
+              We assist individuals and families with essential daily
+              transactions including credit card bill payment, flight, train,
+              and bus booking, all types of mobile and DTH recharge, and
+              PF-related services.
             </p>
 
             {/* Tagline Pillars based on supplied keywords */}
@@ -92,7 +91,7 @@ export default function About({ onOpenOriginalPoster }: AboutProps) {
                   Trusted
                 </h3>
                 <p className="mt-1 text-xs text-slate-600 leading-normal">
-                  {BUSINESS_INFO.experienceClaim} serving customers across Mundra
+                  Dedicated and trusted service for customers across Mundra
                   and Kutch.
                 </p>
               </div>

@@ -26,7 +26,7 @@ export default function Home() {
         {/* 4 Core Services Grid */}
         <Services />
 
-        {/* About Krisha Enterprises & Experience */}
+        {/* About Krisha Enterprises */}
         <About onOpenOriginalPoster={() => setIsPosterModalOpen(true)} />
 
         {/* Contact, Full Address, and Directions */}

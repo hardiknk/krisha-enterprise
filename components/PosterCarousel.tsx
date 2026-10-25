@@ -16,7 +16,6 @@ import {
   Smartphone,
   ShieldCheck,
   MapPin,
-  Sparkles,
   Maximize2,
 } from "lucide-react";
 import { BUSINESS_INFO } from "@/data/businessInfo";
@@ -163,10 +162,10 @@ export default function PosterCarousel({
                 </span>
               </div>
 
-              {/* Experience badge */}
-              <div className="mt-3 inline-flex items-center gap-1.5 px-3 py-1 bg-amber-50 border border-amber-300 rounded-md text-amber-900 font-bold text-xs sm:text-sm">
-                <Sparkles className="w-4 h-4 text-amber-600" aria-hidden="true" />
-                <span>{BUSINESS_INFO.experienceClaim}</span>
+              {/* Location badge */}
+              <div className="mt-3 inline-flex items-center gap-1.5 px-3 py-1 bg-slate-50 border border-slate-200 rounded-md text-slate-800 font-bold text-xs sm:text-sm">
+                <MapPin className="w-4 h-4 text-red-600" aria-hidden="true" />
+                <span>Mundra - Kutch</span>
               </div>
 
               {/* Lower Navy Section (matching the lower half of the poster) */}
@@ -315,7 +314,7 @@ export default function PosterCarousel({
                   </a>
                 </div>
                 <p className="mt-2 text-[11px] text-slate-400">
-                  {BUSINESS_INFO.experienceClaim} • Fast • Secure • Trusted Service
+                  Fast • Secure • Trusted Service • Mundra - Kutch
                 </p>
               </div>
             </div>

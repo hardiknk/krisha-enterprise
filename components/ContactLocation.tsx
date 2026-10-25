@@ -131,7 +131,7 @@ export default function ContactLocation() {
                   Local Service Commitment
                 </span>
                 <p>
-                  Serving Mundra - Kutch with {BUSINESS_INFO.experienceClaim}.
+                  Serving Mundra - Kutch with dedicated local support.
                   {BUSINESS_INFO.tagline}.
                 </p>
               </div>

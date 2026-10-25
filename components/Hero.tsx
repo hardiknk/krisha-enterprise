@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { MessageCircle, Phone, Award, ShieldCheck, MapPin } from "lucide-react";
+import { MessageCircle, Phone, ShieldCheck, MapPin } from "lucide-react";
 import { BUSINESS_INFO } from "@/data/businessInfo";
 import PosterCarousel from "@/components/PosterCarousel";
 
@@ -28,10 +28,6 @@ export default function Hero({ onOpenOriginalPoster }: HeroProps) {
           <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-red-600/20 border border-red-500/40 text-red-200 text-xs sm:text-sm font-bold tracking-wide uppercase">
             <ShieldCheck className="w-4 h-4 text-red-400" aria-hidden="true" />
             {BUSINESS_INFO.tagline}
-          </span>
-          <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-amber-400/15 border border-amber-400/40 text-amber-300 text-xs sm:text-sm font-bold">
-            <Award className="w-4 h-4 text-amber-400" aria-hidden="true" />
-            {BUSINESS_INFO.experienceClaim}
           </span>
         </div>
 

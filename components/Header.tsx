@@ -60,10 +60,6 @@ export default function Header({
               <ShieldCheck className="w-3.5 h-3.5" aria-hidden="true" />
               {BUSINESS_INFO.tagline}
             </span>
-            <span className="text-slate-500">•</span>
-            <span className="text-slate-300 font-normal">
-              {BUSINESS_INFO.experienceClaim}
-            </span>
           </div>
           <div className="flex items-center gap-4">
             <span className="text-slate-300">

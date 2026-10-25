@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     template: "%s | Krisha Enterprises",
   },
   description:
-    "Krisha Enterprises at Baroi Road, Mundra - Kutch provides fast, secure, and trusted services for Credit Card Bill Payment, Flight/Train/Bus Booking, All Types of Recharge, and PF-related services. Backed by 10+ years of experience. Call 7600468552.",
+    "Krisha Enterprises at Baroi Road, Mundra - Kutch provides fast, secure, and trusted services for Credit Card Bill Payment, Flight/Train/Bus Booking, All Types of Recharge, and PF-related services. Call 7600468552.",
   keywords: [
     "Krisha Enterprises",
     "Krisha Enterprises Mundra",

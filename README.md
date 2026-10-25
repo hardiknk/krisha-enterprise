@@ -6,7 +6,6 @@ A polished, responsive, mobile-first static website built for **Krisha Enterpris
 
 - **Business Name:** Krisha Enterprises
 - **Tagline:** Fast • Secure • Trusted Service
-- **Experience:** 10+ years of experience
 - **Phone / WhatsApp:** +91 7600468552
 - **Address:** Baroi Road, Adeshvar Complex, Near Mahalaxmi Mall, Opposite Sabri Hotel, Mundra - Kutch
 - **Core Services:**
@@ -120,7 +119,7 @@ python3 -m http.server --directory out 8080
 │   ├── Hero.tsx            # Headline, quick contact buttons, and carousel container
 │   ├── PosterCarousel.tsx  # Accessible poster-style carousel with 4 slides
 │   ├── Services.tsx        # 4 service cards with direct WhatsApp inquiry actions
-│   ├── About.tsx           # Business identity, 10+ years experience, tagline values
+│   ├── About.tsx           # Business identity, tagline values, poster preview
 │   ├── ContactLocation.tsx # Exact address, click-to-call, directions link, map
 │   ├── Footer.tsx          # Business details, copyright, back-to-top button
 │   ├── FloatingCTA.tsx     # Mobile-first floating bar for WhatsApp & Call

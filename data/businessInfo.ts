@@ -10,7 +10,6 @@ export interface ServiceItem {
 export const BUSINESS_INFO = {
   name: "Krisha Enterprises",
   legalName: "Krisha Enterprises",
-  experienceClaim: "10+ years of experience",
   tagline: "Fast • Secure • Trusted Service",
   taglineWords: ["Fast", "Secure", "Trusted Service"],
   phone: "7600468552",

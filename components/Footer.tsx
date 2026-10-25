@@ -35,7 +35,6 @@ export default function Footer({ onOpenOriginalPoster }: FooterProps) {
             <p className="text-sm text-slate-400 leading-relaxed max-w-sm">
               Providing credit card bill payment, flight, train, and bus booking,
               all types of recharge, and PF-related services in Mundra - Kutch.
-              Backed by {BUSINESS_INFO.experienceClaim}.
             </p>
           </div>
 
@@ -66,7 +65,7 @@ export default function Footer({ onOpenOriginalPoster }: FooterProps) {
                   href="#about"
                   className="hover:text-amber-400 transition-colors focus:outline-none focus:underline"
                 >
-                  About &amp; Experience
+                  About
                 </a>
               </li>
               <li>
