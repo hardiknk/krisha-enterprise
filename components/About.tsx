@@ -19,7 +19,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="py-20 sm:py-28 bg-[#050c1a]/80 backdrop-blur-md text-white relative overflow-hidden border-t border-white/5"
+      className="py-20 sm:py-28 bg-[#050c1a]/50 backdrop-blur-md text-white relative overflow-hidden border-t border-white/5"
       aria-labelledby="about-heading"
     >
       {/* Ambient background lighting */}

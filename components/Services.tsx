@@ -113,7 +113,7 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="py-20 sm:py-28 bg-[#040916]/80 backdrop-blur-md text-white relative overflow-hidden border-t border-white/5"
+      className="py-20 sm:py-28 bg-[#040916]/50 backdrop-blur-md text-white relative overflow-hidden border-t border-white/5"
       aria-labelledby="services-heading"
     >
       {/* Background ambient lighting */}

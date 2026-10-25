@@ -33,7 +33,7 @@ export default function ContactLocation() {
   return (
     <section
       id="contact"
-      className="py-20 sm:py-28 bg-[#040916]/80 backdrop-blur-md text-white relative overflow-hidden border-t border-white/5"
+      className="py-20 sm:py-28 bg-[#040916]/50 backdrop-blur-md text-white relative overflow-hidden border-t border-white/5"
       aria-labelledby="contact-heading"
     >
       {/* Background ambient lighting */}
