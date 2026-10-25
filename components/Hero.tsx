@@ -1,11 +1,11 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import {
   MessageCircle,
   Phone,
   MapPin,
-  Sparkles,
   Layers,
   Lock,
   Clock,
@@ -29,12 +29,20 @@ export default function Hero() {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Top Floating Badge */}
+        {/* Top Floating Badge with Official Logo */}
         <div className="flex items-center justify-center mb-5 sm:mb-6">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 shadow-lg shadow-black/40 text-xs sm:text-sm font-semibold tracking-wide text-amber-300 backdrop-blur-xl">
-            <Sparkles className="w-4 h-4 text-amber-400" aria-hidden="true" />
+          <div className="inline-flex items-center gap-2.5 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 shadow-lg shadow-black/40 text-xs sm:text-sm font-semibold tracking-wide text-amber-300 backdrop-blur-xl">
+            <div className="h-6 w-auto aspect-[696/324] rounded overflow-hidden bg-white shrink-0 p-0.5 border border-white/20">
+              <Image
+                src="/images/krisha-logo.png"
+                alt="Krisha Logo Icon"
+                className="h-full w-full object-contain"
+                width={52}
+                height={24}
+              />
+            </div>
             <span>{BUSINESS_INFO.tagline}</span>
-            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse ml-1" />
+            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse ml-0.5" />
           </div>
         </div>
 

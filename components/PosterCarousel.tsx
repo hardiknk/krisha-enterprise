@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef, useCallback } from "react";
+import Image from "next/image";
 import {
   ChevronLeft,
   ChevronRight,
@@ -142,6 +143,17 @@ export default function PosterCarousel() {
                 <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15 text-xs sm:text-sm font-bold tracking-wider uppercase text-amber-300 mb-4 backdrop-blur-md">
                   <Sparkles className="w-4 h-4 text-amber-400" aria-hidden="true" />
                   <span>{BUSINESS_INFO.headline}</span>
+                </div>
+
+                {/* Official Logo Badge */}
+                <div className="mx-auto mb-5 w-32 sm:w-40 aspect-[696/324] rounded-xl overflow-hidden bg-white border border-white/30 shadow-2xl p-0.5">
+                  <Image
+                    src="/images/krisha-logo.png"
+                    alt="Krisha Enterprises Official Logo"
+                    className="w-full h-full object-contain"
+                    width={160}
+                    height={75}
+                  />
                 </div>
 
                 {/* Main Titles */}

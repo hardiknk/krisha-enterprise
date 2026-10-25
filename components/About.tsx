@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import {
   Zap,
   Lock,
@@ -120,16 +121,27 @@ export default function About() {
               glowColor="gold"
               className="bg-gradient-to-b from-[#0c1f44] to-[#08152e] p-6 sm:p-8 rounded-3xl border border-white/15 shadow-2xl backdrop-blur-2xl"
             >
-              <div className="mb-5 pb-4 border-b border-white/10">
-                <span className="text-[11px] font-bold uppercase tracking-wider text-amber-400 block mb-1">
-                  Mundra Local Service Hub
-                </span>
-                <h3 className="text-2xl font-black text-white">
-                  Krisha Enterprises
-                </h3>
-                <p className="text-xs text-slate-300 mt-1">
-                  {BUSINESS_INFO.tagline}
-                </p>
+              <div className="mb-5 pb-4 border-b border-white/10 flex items-center justify-between gap-4">
+                <div>
+                  <span className="text-[11px] font-bold uppercase tracking-wider text-amber-400 block mb-1">
+                    Mundra Local Service Hub
+                  </span>
+                  <h3 className="text-2xl font-black text-white">
+                    Krisha Enterprises
+                  </h3>
+                  <p className="text-xs text-slate-300 mt-1">
+                    {BUSINESS_INFO.tagline}
+                  </p>
+                </div>
+                <div className="w-24 sm:w-28 aspect-[696/324] rounded-lg overflow-hidden bg-white border border-white/20 p-0.5 shrink-0 shadow-md">
+                  <Image
+                    src="/images/krisha-logo.png"
+                    alt="Krisha Enterprises Official Logo"
+                    className="w-full h-full object-contain"
+                    width={112}
+                    height={52}
+                  />
+                </div>
               </div>
 
               {/* Service list checks */}

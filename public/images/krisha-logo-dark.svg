@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 325" width="100%" height="100%">
+  <defs>
+    <!-- Background Dark Navy -->
+    <linearGradient id="bgDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050C1A" />
+      <stop offset="100%" stop-color="#091836" />
+    </linearGradient>
+
+    <!-- Vibrant Red -->
+    <linearGradient id="redGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF4D6D" />
+      <stop offset="100%" stop-color="#E11D48" />
+    </linearGradient>
+
+    <!-- Warm Gold -->
+    <linearGradient id="goldGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047" />
+      <stop offset="100%" stop-color="#F59E0B" />
+    </linearGradient>
+
+    <filter id="softGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Container -->
+  <rect width="700" height="325" rx="16" fill="url(#bgDark)" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="2" />
+
+  <!-- Top Arch Corners -->
+  <path d="M 0,0 L 230,0 C 130,5 45,55 0,135 Z" fill="#E11D48" opacity="0.25" />
+  <path d="M 700,0 L 470,0 C 570,5 655,55 700,135 Z" fill="#E11D48" opacity="0.25" />
+
+  <!-- Top Arched Red Stroke Ribbon -->
+  <path d="M 0,140 C 50,55 140,5 350,5 C 560,5 650,55 700,140" 
+        fill="none" 
+        stroke="url(#redGlow)" 
+        stroke-width="7" 
+        stroke-linecap="round" />
+
+  <!-- Top Arched Gold Accent Line -->
+  <path d="M 15,142 C 60,65 150,18 350,18 C 550,18 640,65 685,142" 
+        fill="none" 
+        stroke="url(#goldGlow)" 
+        stroke-width="2.5" 
+        stroke-linecap="round" />
+
+  <!-- Sub-header Tagline with Side Dashes -->
+  <g transform="translate(350, 48)">
+    <path d="M -240,-4 L -180,-4" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" />
+    <text x="0" y="0" 
+          font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" 
+          font-weight="900" 
+          font-size="19" 
+          fill="#FDE047" 
+          text-anchor="middle" 
+          letter-spacing="2.8">
+      FAST <tspan fill="#FF4D6D" dx="6" dy="0">•</tspan><tspan fill="#FDE047" dx="6">SECURE</tspan> <tspan fill="#FF4D6D" dx="6">•</tspan><tspan fill="#FDE047" dx="6">TRUSTED SERVICE</tspan>
+    </text>
+    <path d="M 180,-4 L 240,-4" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" />
+  </g>
+
+  <!-- Main Wordmark 1: KRISHA -->
+  <text x="350" y="196" 
+        font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" 
+        font-weight="950" 
+        font-size="142" 
+        fill="#FFFFFF" 
+        text-anchor="middle" 
+        letter-spacing="2">
+    KRISHA
+  </text>
+
+  <!-- Main Wordmark 2: ENTERPRISES -->
+  <text x="350" y="292" 
+        font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" 
+        font-weight="950" 
+        font-size="94" 
+        fill="url(#redGlow)" 
+        text-anchor="middle" 
+        letter-spacing="4">
+    ENTERPRISES
+  </text>
+
+  <!-- Bottom Arch Baseline Trim -->
+  <path d="M 10,324 Q 350,296 690,324" 
+        fill="none" 
+        stroke="url(#goldGlow)" 
+        stroke-width="4" />
+</svg>

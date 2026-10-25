@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { Phone, MessageCircle, MapPin, ArrowUp, Sparkles } from "lucide-react";
 import { BUSINESS_INFO } from "@/data/businessInfo";
 
@@ -21,13 +22,29 @@ export default function Footer() {
           
           {/* Brand info */}
           <div className="md:col-span-5 space-y-4">
-            <div className="flex items-baseline gap-2">
-              <span className="text-2xl font-black tracking-tight text-white font-sans">
-                KRISHA
-              </span>
-              <span className="text-xl font-black tracking-wide text-rose-500 font-sans">
-                ENTERPRISES
-              </span>
+            <div className="flex items-center gap-3">
+              <div className="h-12 w-auto aspect-[696/324] rounded-lg overflow-hidden border border-white/20 bg-white p-0.5 shadow-lg shadow-black/50 shrink-0">
+                <Image
+                  src="/images/krisha-logo.png"
+                  alt="Krisha Enterprises Official Logo"
+                  className="h-full w-full object-contain"
+                  width={103}
+                  height={48}
+                />
+              </div>
+              <div className="flex flex-col">
+                <div className="flex items-baseline gap-1.5">
+                  <span className="text-xl sm:text-2xl font-black tracking-tight text-white font-sans leading-none">
+                    KRISHA
+                  </span>
+                  <span className="text-lg sm:text-xl font-black tracking-wide text-rose-500 font-sans leading-none">
+                    ENTERPRISES
+                  </span>
+                </div>
+                <span className="text-[10px] font-semibold uppercase tracking-widest text-amber-400 mt-1">
+                  {BUSINESS_INFO.tagline}
+                </span>
+              </div>
             </div>
             
             <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-semibold text-amber-300">
