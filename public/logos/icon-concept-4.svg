@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGradIcon4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040816" />
+      <stop offset="100%" stop-color="#0A142C" />
+    </linearGradient>
+
+    <linearGradient id="neonRoseIcon4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF3366" />
+      <stop offset="100%" stop-color="#E11D48" />
+    </linearGradient>
+
+    <linearGradient id="solarGoldIcon4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD166" />
+      <stop offset="100%" stop-color="#FF9F1C" />
+    </linearGradient>
+
+    <filter id="neonGlowIcon4" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="512" height="512" rx="128" fill="url(#bgGradIcon4)" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="6" />
+
+  <circle cx="256" cy="256" r="180" fill="#FF3366" opacity="0.16" filter="url(#neonGlowIcon4)" />
+  <circle cx="290" cy="210" r="140" fill="#FF9F1C" opacity="0.14" filter="url(#neonGlowIcon4)" />
+
+  <g transform="translate(106, 106) scale(2.0)">
+    <polygon points="50,15 100,15 135,50 135,100 100,135 50,135 15,100 15,50" 
+             fill="#061226" 
+             stroke="#FFFFFF" 
+             stroke-opacity="0.15" 
+             stroke-width="2" />
+
+    <rect x="36" y="34" width="16" height="82" rx="4" fill="url(#neonRoseIcon4)" />
+
+    <path d="M 60,75 L 94,40 C 98,36 105,39 105,45 L 105,58 C 105,62 103,66 99,70 L 75,90 Z" 
+          fill="url(#solarGoldIcon4)" />
+
+    <path d="M 64,80 L 100,116 C 104,120 101,126 95,126 L 82,126 C 78,126 74,124 71,120 L 48,94 Z" 
+          fill="url(#neonRoseIcon4)" />
+
+    <path d="M 112,65 L 122,75 L 112,85" 
+          fill="none" 
+          stroke="url(#solarGoldIcon4)" 
+          stroke-width="4" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" />
+
+    <circle cx="75" cy="75" r="3.5" fill="#FFFFFF" />
+  </g>
+</svg>

@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040816" />
+      <stop offset="100%" stop-color="#0A142C" />
+    </linearGradient>
+
+    <!-- Neon Rose Gradient -->
+    <linearGradient id="neonRose4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF3366" />
+      <stop offset="100%" stop-color="#E11D48" />
+    </linearGradient>
+
+    <!-- Solar Gold Gradient -->
+    <linearGradient id="solarGold4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD166" />
+      <stop offset="100%" stop-color="#FF9F1C" />
+    </linearGradient>
+
+    <!-- Cyan Electric Flare -->
+    <linearGradient id="electricCyan4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06FFF0" />
+      <stop offset="100%" stop-color="#00A8FF" />
+    </linearGradient>
+
+    <filter id="neonGlow4" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="9" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Canvas Container -->
+  <rect width="800" height="240" rx="24" fill="url(#bgGrad4)" stroke="#FFFFFF" stroke-opacity="0.10" stroke-width="2" />
+
+  <!-- Ambient Light Orbs -->
+  <circle cx="120" cy="120" r="75" fill="#FF3366" opacity="0.14" filter="url(#neonGlow4)" />
+  <circle cx="135" cy="85" r="50" fill="#FF9F1C" opacity="0.12" filter="url(#neonGlow4)" />
+
+  <!-- ============================================== -->
+  <!-- ICON EMBLEM: Pulse Nexus 'K' (Left)            -->
+  <!-- ============================================== -->
+  <g transform="translate(45, 45)">
+    <!-- Tech Accent Outer Octagon Ring -->
+    <polygon points="50,15 100,15 135,50 135,100 100,135 50,135 15,100 15,50" 
+             fill="#061226" 
+             stroke="#FFFFFF" 
+             stroke-opacity="0.12" 
+             stroke-width="1.5" />
+
+    <!-- Vertical Pillar with Rounded Chamfers -->
+    <rect x="36" y="34" width="16" height="82" rx="4" fill="url(#neonRose4)" />
+
+    <!-- Top Forward Chevron Arrow -->
+    <path d="M 60,75 L 94,40 C 98,36 105,39 105,45 L 105,58 C 105,62 103,66 99,70 L 75,90 Z" 
+          fill="url(#solarGold4)" />
+
+    <!-- Bottom Forward Chevron Arrow -->
+    <path d="M 64,80 L 100,116 C 104,120 101,126 95,126 L 82,126 C 78,126 74,124 71,120 L 48,94 Z" 
+          fill="url(#neonRose4)" />
+
+    <!-- Glowing Speed Chevrons (Ticketing / Fast Transfer) -->
+    <path d="M 112,65 L 122,75 L 112,85" 
+          fill="none" 
+          stroke="url(#solarGold4)" 
+          stroke-width="3" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" />
+
+    <!-- Energy Pulse Dot -->
+    <circle cx="75" cy="75" r="3" fill="#FFFFFF" />
+  </g>
+
+  <!-- ============================================== -->
+  <!-- TYPOGRAPHY: Tech Grotesk Wordmark (Right)      -->
+  <!-- ============================================== -->
+  <g transform="translate(230, 0)">
+    <!-- Small Category Pill -->
+    <rect x="0" y="44" width="230" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.06" stroke="#FF3366" stroke-opacity="0.4" stroke-width="1" />
+    <circle cx="14" cy="56" r="3.5" fill="#FF3366" />
+    <text x="26" y="60" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="800" fill="#FFD166" letter-spacing="1.8">YOUR ONE-STOP SOLUTION</text>
+
+    <!-- Main Wordmark -->
+    <text x="0" y="118" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="46" fill="#FFFFFF" letter-spacing="1.5">
+      KRISHA
+      <tspan fill="url(#neonRose4)" dx="12">ENTERPRISES</tspan>
+    </text>
+
+    <!-- Sub-headline -->
+    <text x="0" y="152" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="15" fill="#E2E8F0" letter-spacing="1.6">
+      SMART SOLUTIONS FOR YOUR EVERYDAY NEEDS
+    </text>
+
+    <!-- Core Services -->
+    <text x="0" y="180" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="11.5" fill="#94A3B8" letter-spacing="1.1">
+      CREDIT CARDS • INSURANCE • PF SERVICES • TATKAL TICKETS
+    </text>
+
+    <!-- Location line -->
+    <g transform="translate(0, 196)">
+      <circle cx="5" cy="5" r="2.5" fill="#FFD166" />
+      <text x="14" y="9" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="700" fill="#CBD5E1" letter-spacing="1.2">
+        BAROI ROAD, ADESHVAR COMPLEX, MUNDRA - KUTCH
+      </text>
+    </g>
+  </g>
+</svg>

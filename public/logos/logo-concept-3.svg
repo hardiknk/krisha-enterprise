@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020611" />
+      <stop offset="100%" stop-color="#071533" />
+    </linearGradient>
+
+    <!-- Metallic Gold Leaf Gradient -->
+    <linearGradient id="goldLeaf3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FEF08A" />
+      <stop offset="35%" stop-color="#F59E0B" />
+      <stop offset="70%" stop-color="#D97706" />
+      <stop offset="100%" stop-color="#B45309" />
+    </linearGradient>
+
+    <!-- Pure Platinum Sheen -->
+    <linearGradient id="platinum3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E2E8F0" />
+      <stop offset="50%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#94A3B8" />
+    </linearGradient>
+
+    <!-- Crimson Velvet Accent -->
+    <linearGradient id="velvet3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF3366" />
+      <stop offset="100%" stop-color="#B91C1C" />
+    </linearGradient>
+
+    <filter id="goldGlow3" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Canvas Container -->
+  <rect width="800" height="240" rx="24" fill="url(#bgGrad3)" stroke="#F59E0B" stroke-opacity="0.25" stroke-width="2" />
+
+  <!-- Background Halo -->
+  <circle cx="120" cy="120" r="85" fill="#F59E0B" opacity="0.10" filter="url(#goldGlow3)" />
+
+  <!-- ============================================== -->
+  <!-- ICON EMBLEM: Sovereign Crest Shield (Left)     -->
+  <!-- ============================================== -->
+  <g transform="translate(45, 38)">
+    <!-- Outer Crest Shield Contour -->
+    <path d="M 75,12 C 105,12 135,22 142,32 C 142,88 118,132 75,158 C 32,132 8,88 8,32 C 15,22 45,12 75,12 Z" 
+          fill="#061226" 
+          stroke="url(#goldLeaf3)" 
+          stroke-width="3.5" 
+          stroke-linejoin="round" />
+
+    <!-- Inner Golden Inset Shield Border -->
+    <path d="M 75,22 C 100,22 125,30 131,38 C 131,82 110,120 75,144 C 40,120 19,82 19,38 C 25,30 50,22 75,22 Z" 
+          fill="none" 
+          stroke="#FFFFFF" 
+          stroke-opacity="0.15" 
+          stroke-width="1.5" />
+
+    <!-- 4-Point Crown Star of Excellence at Top Center -->
+    <path d="M 75,28 L 78,36 L 86,39 L 78,42 L 75,50 L 72,42 L 64,39 L 72,36 Z" 
+          fill="url(#goldLeaf3)" />
+
+    <!-- Monogram 'K' Spine (Architectural Column) -->
+    <path d="M 46,54 L 58,54 L 58,124 L 46,124 Z" 
+          fill="url(#goldLeaf3)" />
+
+    <!-- Upper Arm of 'K' (Faceted Diamond Cut) -->
+    <polygon points="62,88 98,54 110,54 80,94" 
+             fill="url(#platinum3)" />
+
+    <!-- Lower Arm of 'K' (Anchored Finial) -->
+    <polygon points="68,88 104,124 116,124 78,82" 
+             fill="url(#goldLeaf3)" />
+
+    <!-- Central Gem Accent -->
+    <circle cx="75" cy="88" r="3.5" fill="url(#velvet3)" stroke="#FFFFFF" stroke-width="1" />
+  </g>
+
+  <!-- ============================================== -->
+  <!-- TYPOGRAPHY: Sovereign Luxury Lockup (Right)    -->
+  <!-- ============================================== -->
+  <g transform="translate(230, 0)">
+    <!-- Small Category Pill -->
+    <rect x="0" y="44" width="200" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.05" stroke="#F59E0B" stroke-opacity="0.4" stroke-width="1" />
+    <circle cx="14" cy="56" r="3" fill="#F59E0B" />
+    <text x="26" y="60" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="800" fill="#FDE047" letter-spacing="2">KRISHA ENTERPRISES</text>
+
+    <!-- Main Wordmark -->
+    <text x="0" y="118" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="44" fill="url(#platinum3)" letter-spacing="3">
+      KRISHA
+      <tspan fill="url(#goldLeaf3)" dx="12">ENTERPRISES</tspan>
+    </text>
+
+    <!-- Sub-headline -->
+    <text x="0" y="152" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="14.5" fill="#E2E8F0" letter-spacing="2.2">
+      SMART SOLUTIONS FOR YOUR EVERYDAY NEEDS
+    </text>
+
+    <!-- Core Services -->
+    <text x="0" y="180" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="11.5" fill="#94A3B8" letter-spacing="1.2">
+      FAST • SECURE • TRUSTED SERVICE IN MUNDRA - KUTCH
+    </text>
+
+    <!-- Location line -->
+    <g transform="translate(0, 196)">
+      <polygon points="5,2 8,8 2,8" fill="#F59E0B" />
+      <text x="14" y="9" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="700" fill="#CBD5E1" letter-spacing="1.4">
+        BAROI ROAD, ADESHVAR COMPLEX, MUNDRA
+      </text>
+    </g>
+  </g>
+</svg>

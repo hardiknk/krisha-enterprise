@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGradIcon2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#030814" />
+      <stop offset="100%" stop-color="#08152E" />
+    </linearGradient>
+
+    <linearGradient id="emeraldGradIcon2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34D399" />
+      <stop offset="50%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+
+    <linearGradient id="coralGradIcon2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FB7185" />
+      <stop offset="50%" stop-color="#E11D48" />
+      <stop offset="100%" stop-color="#881337" />
+    </linearGradient>
+
+    <linearGradient id="amberGradIcon2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCD34D" />
+      <stop offset="100%" stop-color="#F59E0B" />
+    </linearGradient>
+
+    <filter id="glowIcon2" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="512" height="512" rx="128" fill="url(#bgGradIcon2)" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="6" />
+
+  <circle cx="256" cy="256" r="180" fill="#10B981" opacity="0.14" filter="url(#glowIcon2)" />
+  <circle cx="300" cy="220" r="130" fill="#E11D48" opacity="0.12" filter="url(#glowIcon2)" />
+
+  <g transform="translate(106, 106) scale(2.0)">
+    <circle cx="75" cy="75" r="68" fill="none" stroke="#FFFFFF" stroke-opacity="0.1" stroke-width="2" stroke-dasharray="5 7" />
+
+    <path d="M 30,35 A 68,68 0 0,1 138,50" fill="none" stroke="url(#amberGradIcon2)" stroke-width="4" stroke-linecap="round" />
+
+    <path d="M 45,35 C 28,35 15,48 15,68 C 15,92 40,115 75,115 C 95,115 110,105 118,92" 
+          fill="none" 
+          stroke="url(#emeraldGradIcon2)" 
+          stroke-width="12" 
+          stroke-linecap="round" />
+
+    <path d="M 45,75 L 110,32 C 118,27 128,33 125,42 L 120,52 C 118,57 114,60 109,63 L 70,88" 
+          fill="none" 
+          stroke="url(#coralGradIcon2)" 
+          stroke-width="12" 
+          stroke-linecap="round" />
+
+    <path d="M 68,82 L 112,122 C 117,126 115,135 108,136 L 96,136 C 92,136 88,133 85,130 L 48,95" 
+          fill="none" 
+          stroke="url(#amberGradIcon2)" 
+          stroke-width="11" 
+          stroke-linecap="round" />
+
+    <rect x="42" y="38" width="12" height="74" rx="6" fill="#FFFFFF" />
+
+    <circle cx="125" cy="42" r="4.5" fill="#FCD34D" />
+    <circle cx="30" cy="35" r="4" fill="#34D399" />
+    <circle cx="118" cy="92" r="4" fill="#FB7185" />
+  </g>
+</svg>

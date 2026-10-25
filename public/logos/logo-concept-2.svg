@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#030814" />
+      <stop offset="100%" stop-color="#08152E" />
+    </linearGradient>
+
+    <!-- Emerald Flow Gradient -->
+    <linearGradient id="emeraldGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34D399" />
+      <stop offset="50%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+
+    <!-- Sunset Coral to Ruby -->
+    <linearGradient id="coralGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FB7185" />
+      <stop offset="50%" stop-color="#E11D48" />
+      <stop offset="100%" stop-color="#881337" />
+    </linearGradient>
+
+    <!-- Warm Amber Gold -->
+    <linearGradient id="amberGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCD34D" />
+      <stop offset="100%" stop-color="#F59E0B" />
+    </linearGradient>
+
+    <!-- Dynamic Glow -->
+    <filter id="glow2" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Canvas Container -->
+  <rect width="800" height="240" rx="24" fill="url(#bgGrad2)" stroke="#FFFFFF" stroke-opacity="0.10" stroke-width="2" />
+
+  <!-- Ambient Light Orbs -->
+  <circle cx="120" cy="120" r="80" fill="#10B981" opacity="0.12" filter="url(#glow2)" />
+  <circle cx="140" cy="100" r="50" fill="#E11D48" opacity="0.10" filter="url(#glow2)" />
+
+  <!-- ============================================== -->
+  <!-- ICON EMBLEM: Infinity Orbit 'K' (Left)         -->
+  <!-- ============================================== -->
+  <g transform="translate(45, 45)">
+    <!-- Outer Concentric Orbit Track -->
+    <circle cx="75" cy="75" r="68" fill="none" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1.5" stroke-dasharray="4 6" />
+
+    <!-- Orbital Energy Arc -->
+    <path d="M 30,35 A 68,68 0 0,1 138,50" fill="none" stroke="url(#amberGrad2)" stroke-width="3" stroke-linecap="round" />
+
+    <!-- Infinity Figure-8 Loop Ribbon forming the Left Loop -->
+    <path d="M 45,35 C 28,35 15,48 15,68 C 15,92 40,115 75,115 C 95,115 110,105 118,92" 
+          fill="none" 
+          stroke="url(#emeraldGrad2)" 
+          stroke-width="10" 
+          stroke-linecap="round" />
+
+    <!-- Overlapping Forward Diagonal Ribbon (Upper Branch of 'K') -->
+    <path d="M 45,75 L 110,32 C 118,27 128,33 125,42 L 120,52 C 118,57 114,60 109,63 L 70,88" 
+          fill="none" 
+          stroke="url(#coralGrad2)" 
+          stroke-width="10" 
+          stroke-linecap="round" />
+
+    <!-- Lower Forward Diagonal Ribbon (Lower Branch of 'K') -->
+    <path d="M 68,82 L 112,122 C 117,126 115,135 108,136 L 96,136 C 92,136 88,133 85,130 L 48,95" 
+          fill="none" 
+          stroke="url(#amberGrad2)" 
+          stroke-width="9" 
+          stroke-linecap="round" />
+
+    <!-- Central Upright Core Spine -->
+    <rect x="42" y="38" width="10" height="74" rx="5" fill="#FFFFFF" />
+
+    <!-- Orbit Sparkle Satellites -->
+    <circle cx="125" cy="42" r="3.5" fill="#FCD34D" />
+    <circle cx="30" cy="35" r="3" fill="#34D399" />
+    <circle cx="118" cy="92" r="3" fill="#FB7185" />
+  </g>
+
+  <!-- ============================================== -->
+  <!-- TYPOGRAPHY: Modern Fluid Wordmark (Right)      -->
+  <!-- ============================================== -->
+  <g transform="translate(230, 0)">
+    <!-- Small Category Pill -->
+    <rect x="0" y="44" width="220" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.06" stroke="#10B981" stroke-opacity="0.35" stroke-width="1" />
+    <circle cx="14" cy="56" r="3.5" fill="#34D399" />
+    <text x="26" y="60" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="800" fill="#34D399" letter-spacing="1.8">FAST • SECURE • TRUSTED</text>
+
+    <!-- Main Wordmark -->
+    <text x="0" y="118" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="46" fill="#FFFFFF" letter-spacing="1.2">
+      KRISHA
+      <tspan fill="url(#coralGrad2)" dx="12">ENTERPRISES</tspan>
+    </text>
+
+    <!-- Sub-headline -->
+    <text x="0" y="152" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="15" fill="#F8FAFC" letter-spacing="1.5">
+      YOUR ONE-STOP SOLUTION FOR EVERYDAY ESSENTIALS
+    </text>
+
+    <!-- Core Services -->
+    <text x="0" y="180" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="11.5" fill="#94A3B8" letter-spacing="1.1">
+      CREDIT CARD TO BANK • BILL ROTATION • PF &amp; MOTOR INSURANCE
+    </text>
+
+    <!-- Location line -->
+    <g transform="translate(0, 196)">
+      <circle cx="5" cy="5" r="2.5" fill="#F59E0B" />
+      <text x="14" y="9" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="700" fill="#CBD5E1" letter-spacing="1.2">
+        ADESHVAR COMPLEX, BAROI ROAD, MUNDRA
+      </text>
+    </g>
+  </g>
+</svg>

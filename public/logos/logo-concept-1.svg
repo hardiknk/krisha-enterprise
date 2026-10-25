@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" width="100%" height="100%">
+  <defs>
+    <!-- Background subtle luxury tint -->
+    <linearGradient id="bgGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050C1A" />
+      <stop offset="100%" stop-color="#0A1832" />
+    </linearGradient>
+
+    <!-- Rose-Ruby Core Gradient -->
+    <linearGradient id="roseGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF4D6D" />
+      <stop offset="50%" stop-color="#E11D48" />
+      <stop offset="100%" stop-color="#9F1239" />
+    </linearGradient>
+
+    <!-- Imperial Gold Gradient -->
+    <linearGradient id="goldGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047" />
+      <stop offset="50%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#B45309" />
+    </linearGradient>
+
+    <!-- Cyan-Sky Speed Accent -->
+    <linearGradient id="skyGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+
+    <!-- Soft Ambient Glow Filter -->
+    <filter id="glow1" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Canvas Container with Rounded Borders -->
+  <rect width="800" height="240" rx="24" fill="url(#bgGrad1)" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="2" />
+
+  <!-- Background Decorative Grid Light -->
+  <circle cx="120" cy="120" r="95" fill="#E11D48" opacity="0.12" filter="url(#glow1)" />
+  <circle cx="150" cy="90" r="60" fill="#F59E0B" opacity="0.10" filter="url(#glow1)" />
+
+  <!-- ============================================== -->
+  <!-- ICON EMBLEM: The Quantum Hex-K Monogram (Left) -->
+  <!-- ============================================== -->
+  <g transform="translate(45, 45)">
+    <!-- Outer Shield Hexagon Ring -->
+    <polygon points="75,5 140,42 140,118 75,155 10,118 10,42" 
+             fill="#08142B" 
+             stroke="url(#goldGrad1)" 
+             stroke-width="3" 
+             stroke-linejoin="round" />
+
+    <!-- Inner Shield Inset Line -->
+    <polygon points="75,16 130,48 130,112 75,144 20,112 20,48" 
+             fill="none" 
+             stroke="#FFFFFF" 
+             stroke-opacity="0.15" 
+             stroke-width="1.5" />
+
+    <!-- Vertical Pillar of 'K' (Represents Financial Trust & Stability) -->
+    <rect x="42" y="38" width="18" height="74" rx="5" fill="url(#roseGrad1)" />
+
+    <!-- Upper Forward Arrow of 'K' (Flight, Tatkal & Growth) -->
+    <path d="M 64,74 L 98,40 C 102,36 108,39 108,44 L 108,58 C 108,61 106,64 103,67 L 76,88 Z" 
+          fill="url(#goldGrad1)" />
+
+    <!-- Lower Swift Wing of 'K' (Card Settlements & Instant Utility) -->
+    <path d="M 66,78 L 104,114 C 107,117 107,122 103,124 L 92,126 C 89,126 86,124 84,122 L 56,92 Z" 
+          fill="url(#roseGrad1)" />
+
+    <!-- Central Fusion Core Diamond -->
+    <polygon points="68,75 76,67 84,75 76,83" fill="#FFFFFF" opacity="0.95" />
+    <circle cx="76" cy="75" r="2" fill="#0A1832" />
+  </g>
+
+  <!-- ============================================== -->
+  <!-- TYPOGRAPHY: Premium Brand Lockup (Right)       -->
+  <!-- ============================================== -->
+  <g transform="translate(230, 0)">
+    <!-- Small Category Pill -->
+    <rect x="0" y="44" width="190" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.07" stroke="#F59E0B" stroke-opacity="0.3" stroke-width="1" />
+    <circle cx="14" cy="56" r="3.5" fill="#10B981" />
+    <text x="26" y="60" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="800" fill="#FDE047" letter-spacing="1.8">ONE-STOP SOLUTION</text>
+
+    <!-- Main Wordmark: KRISHA ENTERPRISES -->
+    <text x="0" y="118" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="46" fill="#FFFFFF" letter-spacing="1.5">
+      KRISHA
+      <tspan fill="url(#roseGrad1)" dx="12">ENTERPRISES</tspan>
+    </text>
+
+    <!-- Primary Sub-tagline -->
+    <text x="0" y="152" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="14.5" fill="#E2E8F0" letter-spacing="2">
+      SMART SOLUTIONS FOR YOUR EVERYDAY NEEDS
+    </text>
+
+    <!-- Services bullet line -->
+    <text x="0" y="180" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="11.5" fill="#94A3B8" letter-spacing="1">
+      CARDS • MOTOR INSURANCE • PF CLAIMS • TRAVEL • BBPS
+    </text>
+
+    <!-- Bottom Location & Trust Stamp -->
+    <g transform="translate(0, 196)">
+      <circle cx="5" cy="5" r="2.5" fill="#E11D48" />
+      <text x="14" y="9" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="700" fill="#CBD5E1" letter-spacing="1.2">
+        BAROI ROAD, MUNDRA - KUTCH
+      </text>
+    </g>
+  </g>
+</svg>
