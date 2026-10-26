@@ -41,12 +41,12 @@ export default function About() {
               id="about-heading"
               className="text-3xl sm:text-5xl font-black text-white tracking-tight font-sans leading-tight"
             >
-              Serving Mundra with Care, Speed &amp; Integrity
+              Serving Mundra with Care, Reliability &amp; Integrity
             </h2>
 
             {/* Supplied headline / tagline callout */}
             <p className="mt-3 text-base sm:text-lg font-bold text-transparent bg-clip-text bg-gradient-to-r from-rose-400 via-rose-300 to-amber-300">
-              {BUSINESS_INFO.headline}
+              {BUSINESS_INFO.closingMotto}
             </p>
 
             {/* Polite, respectful factual description */}
@@ -68,10 +68,10 @@ export default function About() {
                   <Zap className="w-5 h-5" aria-hidden="true" />
                 </div>
                 <h3 className="font-extrabold text-white text-base">
-                  Fast
+                  Prompt Service
                 </h3>
                 <p className="mt-1 text-xs text-slate-300 leading-relaxed">
-                  Prompt, organized handling of your bookings, recharge, settlements, and bill payments.
+                  Timely assistance for bookings, payments, recharges and other service requests.
                 </p>
               </GlowCard>
 
@@ -83,10 +83,10 @@ export default function About() {
                   <Lock className="w-5 h-5" aria-hidden="true" />
                 </div>
                 <h3 className="font-extrabold text-white text-base">
-                  Secure
+                  Privacy-Conscious
                 </h3>
                 <p className="mt-1 text-xs text-slate-300 leading-relaxed">
-                  Careful and reliable execution for all financial transactions and sensitive PF requests.
+                  Your personal information is handled carefully and used only as required.
                 </p>
               </GlowCard>
 
@@ -98,10 +98,10 @@ export default function About() {
                   <HeartHandshake className="w-5 h-5" aria-hidden="true" />
                 </div>
                 <h3 className="font-extrabold text-white text-base">
-                  Trusted
+                  Personal Support
                 </h3>
                 <p className="mt-1 text-xs text-slate-300 leading-relaxed">
-                  Honest guidance, transparent process, and respectful service for every customer across Kutch.
+                  Helpful guidance with clear and transparent charges communicated before processing.
                 </p>
               </GlowCard>
             </div>

@@ -22,10 +22,11 @@ export const BUSINESS_INFO = {
   legalName: "Krisha Enterprises",
   headline: "Krisha Enterprises – Your One-Stop Solution",
   tagline: "Smart Solutions for Your Everyday Needs",
-  subTagline: "Fast • Secure • Trusted Service",
+  subTagline: "Reliable Service • Transparent Process • Personal Support",
   missionStatement:
-    "Krisha Enterprises offers convenient, secure, and reliable services for payments, travel bookings, motor insurance, utility clearance, and online services right in Mundra - Kutch.",
-  closingMotto: "Krisha Enterprises – Smart Solutions for Your Everyday Needs.",
+    "Krisha Enterprises offers convenient, reliable, and customer-focused services for payments, travel bookings, motor insurance, and everyday online services right in Mundra - Kutch.",
+  closingMotto:
+    "Krisha Enterprises – Reliable Services, Clear Communication & Personal Support.",
   phone: "7600468552",
   phoneFormatted: "+91 76004 68552",
   phoneTel: "tel:+917600468552",
@@ -43,63 +44,63 @@ export const BUSINESS_INFO = {
   services: [
     {
       id: "credit-card-to-bank-transfer",
-      title: "Credit Card to Bank Transfer",
+      title: "Convenient Credit Card Payment Solutions",
       category: "financial",
-      categoryBadge: "Instant Settlement",
+      categoryBadge: "Card Solutions",
       shortDescription:
-        "Fast, reliable, and completely secure credit card to bank account transfer assistance with full transparency and instant processing.",
+        "Assistance with eligible credit card transactions, with clear charges and transparent processing.",
       highlights: [
-        "Direct Bank Account Settlement",
-        "Transparent & Instant Processing",
-        "High Data Privacy & Security",
+        "Assistance for Eligible Credit Cards",
+        "Clear Charges & Upfront Terms",
+        "Transparent & Orderly Processing",
       ],
       iconType: "bank-transfer",
       whatsappMessage:
-        "Hello Krisha Enterprises, I would like to inquire about Credit Card to Bank Transfer service.",
+        "Hello Krisha Enterprises, I would like to inquire about Convenient Credit Card Payment Solutions.",
     },
     {
       id: "credit-card-bill-cycle",
-      title: "Credit Card Bill Payment & Bill Cycle Rotation",
+      title: "Simplify Your Credit Card Payments",
       category: "financial",
-      categoryBadge: "Credit Card Hub",
+      categoryBadge: "Bill & Cycle Management",
       shortDescription:
-        "Timely credit card bill payments and smart billing cycle management assistance so you can maintain a flawless credit score with zero penalties.",
+        "Assistance with credit card bill payments and billing cycle management, subject to applicable bank terms and conditions.",
       highlights: [
-        "All Major Bank Cards Supported",
-        "Bill Cycle Rotation Guidance",
-        "Instant Payment Confirmation",
+        "Credit Card Bill Payment Assistance",
+        "Billing Cycle Management Guidance",
+        "Subject to Applicable Bank Terms",
       ],
       iconType: "credit-card",
       whatsappMessage:
-        "Hello Krisha Enterprises, I need assistance with Credit Card Bill Payment & Bill Cycle Rotation.",
+        "Hello Krisha Enterprises, I need assistance with Simplifying Credit Card Payments & Billing Cycle Management.",
     },
     {
       id: "bike-car-insurance",
-      title: "Bike & Car Insurance",
+      title: "Bike & Car Insurance Assistance",
       category: "insurance-pf",
-      categoryBadge: "Motor Protection",
+      categoryBadge: "Insurance Advisory",
       shortDescription:
-        "Quick and hassle-free policy issuance and renewals for two-wheelers and four-wheelers with competitive quotes and comprehensive coverage options.",
+        "Get assistance with bike and car insurance quotes, new policies and renewals, subject to insurer availability and policy terms.",
       highlights: [
-        "Instant Bike & Car Policy Renewal",
-        "Comprehensive & Third-Party Covers",
-        "Paperless & Quick Documentation",
+        "Bike & Car Insurance Quotes",
+        "New Policy & Renewal Assistance",
+        "Subject to Insurer Terms & Availability",
       ],
       iconType: "car-insurance",
       whatsappMessage:
-        "Hello Krisha Enterprises, I want to inquire about Bike & Car Insurance policy issuance / renewal.",
+        "Hello Krisha Enterprises, I want to inquire about Bike & Car Insurance Assistance.",
     },
     {
       id: "pf-withdrawal-services",
       title: "PF Withdrawal & All PF Related Services",
       category: "insurance-pf",
-      categoryBadge: "PF & Pension",
+      categoryBadge: "EPFO Guidance",
       shortDescription:
-        "Complete step-by-step guidance for employee provident fund (PF) advance withdrawal, full settlement, KYC updating, UAN activation, and grievance assistance.",
+        "Assistance with PF withdrawal, UAN activation, KYC updates, nominee updates and other PF-related services, subject to EPFO rules.",
       highlights: [
-        "Online PF Advance & Final Claim Guidance",
-        "KYC, Bank & Aadhaar Linking Support",
-        "UAN Activation & Transfer Assistance",
+        "PF Withdrawal & Claim Filing Guidance",
+        "UAN Activation & KYC Updates",
+        "Nominee Updates (Subject to EPFO Rules)",
       ],
       iconType: "pf",
       whatsappMessage:
@@ -111,9 +112,9 @@ export const BUSINESS_INFO = {
       category: "travel",
       categoryBadge: "Travel Reservation",
       shortDescription:
-        "Reliable reservation assistance for Indian Railways (including urgent Tatkal booking), domestic and international flights, and interstate luxury bus journeys.",
+        "Reliable reservation assistance for Indian Railways (including Tatkal booking), domestic and international flights, and interstate bus journeys.",
       highlights: [
-        "Tatkal & Regular Train Reservations",
+        "Train & Tatkal Booking Assistance",
         "Domestic & Global Flight Booking",
         "Sleeper & AC Volvo Bus Seats",
       ],
@@ -147,7 +148,7 @@ export const BUSINESS_INFO = {
       highlights: [
         "All DTH Service Providers",
         "Official BBPS Clearing Platform",
-        "Immediate Digital Receipts",
+        "Immediate Digital Confirmation",
       ],
       iconType: "dth",
       whatsappMessage:

@@ -7,7 +7,7 @@ import {
   Phone,
   MapPin,
   Layers,
-  Lock,
+  HeartHandshake,
   Clock,
 } from "lucide-react";
 import { BUSINESS_INFO } from "@/data/businessInfo";
@@ -104,10 +104,10 @@ export default function Hero() {
 
             <GlowCard glowColor="emerald" className="bg-[#0a1733]/50 border border-white/10 p-3.5">
               <div className="flex items-center gap-2 text-emerald-400 mb-1">
-                <Lock className="w-4 h-4" />
-                <span className="text-xs font-bold uppercase tracking-wider text-white">100% Secure</span>
+                <HeartHandshake className="w-4 h-4" />
+                <span className="text-xs font-bold uppercase tracking-wider text-white">Customer-Focused Service</span>
               </div>
-              <p className="text-[11px] text-slate-400">Complete privacy &amp; safe transactions</p>
+              <p className="text-[11px] text-slate-400">Helpful guidance for your everyday needs.</p>
             </GlowCard>
 
             <GlowCard glowColor="gold" className="bg-[#0a1733]/50 border border-white/10 p-3.5">

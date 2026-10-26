@@ -61,7 +61,7 @@ export default function Header() {
             </span>
             <span className="hidden sm:inline text-white/80 font-black">•</span>
             <span className="tracking-wide text-white font-extrabold drop-shadow-sm">
-              Fast • Secure • Trusted Service
+              Reliable Service • Transparent Process • Personal Support
             </span>
           </div>
 

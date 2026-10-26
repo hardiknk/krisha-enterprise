@@ -81,9 +81,9 @@ export default function ContactLocation() {
               </div>
 
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6">
-                Reach out anytime for credit card bill payments, card-to-bank settlement,
-                tatkal / train / flight ticket bookings, motor insurance, or PF assistance.
-                Our team responds quickly with polite, personalized support.
+                Reach out anytime for convenient credit card payment solutions, billing cycle guidance,
+                tatkal / train / flight ticket bookings, bike &amp; car insurance, or PF assistance.
+                Our team responds promptly with polite, personalized support.
               </p>
 
               <div className="space-y-3">

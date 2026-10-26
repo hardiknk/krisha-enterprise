@@ -21,13 +21,13 @@ export const metadata: Metadata = {
     template: "%s | Krisha Enterprises",
   },
   description:
-    "Krisha Enterprises at Baroi Road, Adeshvar Complex, Near Mahalaxmi Mall, Opposite Sabri Hotel, Mundra - Kutch provides convenient and reliable services for Credit Card to Bank Transfer, Bill Cycle Rotation, Bike & Car Insurance, PF Claims, Train/Tatkal/Flight/Bus Booking, Recharge, and BBPS Utility Services. Call 7600468552.",
+    "Krisha Enterprises at Baroi Road, Adeshvar Complex, Near Mahalaxmi Mall, Opposite Sabri Hotel, Mundra - Kutch provides convenient and reliable services for Credit Card Payment Solutions, Bill Management, Bike & Car Insurance, PF Services, Train/Tatkal/Flight/Bus Booking, Recharge, and BBPS Utility Services. Call 7600468552.",
   keywords: [
     "Krisha Enterprises",
     "Krisha Enterprises Mundra",
-    "Credit card to bank transfer Mundra",
+    "Credit card payment solutions Mundra",
     "Credit card bill payment Mundra",
-    "Bill cycle rotation Mundra",
+    "Billing cycle management Mundra",
     "Bike car insurance Mundra Kutch",
     "PF withdrawal services Mundra",
     "Tatkal train ticket booking Mundra",
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Krisha Enterprises – Your One-Stop Solution | Mundra - Kutch",
     description:
-      "Fast • Secure • Trusted Service at Baroi Road, Adeshvar Complex, Near Mahalaxmi Mall, Opposite Sabri Hotel, Mundra - Kutch. Credit Card Settlements, Motor Insurance, PF Claims, and Travel Reservations. Call 7600468552.",
+      "Reliable Service • Transparent Process • Personal Support at Baroi Road, Adeshvar Complex, Near Mahalaxmi Mall, Opposite Sabri Hotel, Mundra - Kutch. Credit Card Solutions, Bike & Car Insurance, PF Services, and Travel Reservations. Call 7600468552.",
     url: "https://krishaenterprises.in",
     siteName: "Krisha Enterprises",
     locale: "en_IN",
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Krisha Enterprises – Smart Solutions for Your Everyday Needs",
     description:
-      "Credit Card to Bank Transfer, Bill Payments, Motor Insurance, PF Claims & Travel Booking in Mundra - Kutch. Call 7600468552.",
+      "Krisha Enterprises – Reliable Services, Clear Communication & Personal Support. Credit Card Solutions, Bike & Car Insurance, PF Services & Travel Booking in Mundra - Kutch. Call 7600468552.",
   },
   robots: {
     index: true,
@@ -85,7 +85,7 @@ const jsonLd = {
   "@type": "LocalBusiness",
   name: BUSINESS_INFO.name,
   description:
-    "Krisha Enterprises offers convenient and reliable services for payments, travel bookings, motor insurance, and online services in Mundra - Kutch.",
+    "Krisha Enterprises offers convenient and reliable services with transparent process and personal support for payments, travel bookings, motor insurance, and online services in Mundra - Kutch.",
   telephone: "+91" + BUSINESS_INFO.phone,
   url: "https://krishaenterprises.in",
   address: {

@@ -21,9 +21,9 @@ interface FAQItem {
 
 const FAQ_ITEMS: FAQItem[] = [
   {
-    question: "How does Credit Card to Bank Transfer and Bill Cycle Rotation work?",
+    question: "How do your Credit Card Payment & Bill Cycle solutions work?",
     answer:
-      "We assist you in transferring funds securely from your credit card directly to your bank account with instant settlement. Additionally, we provide courteous guidance on managing and rotating your billing cycles strategically so you can avoid late payment surcharges, optimize your cash flow, and maintain a healthy credit score.",
+      "We provide convenient credit card payment solutions, offering assistance with eligible credit card transactions with clear charges and transparent processing. Additionally, we assist with credit card bill payments and billing cycle management, subject to applicable bank terms and conditions.",
   },
   {
     question: "Can I book urgent Tatkal train or flight tickets via WhatsApp?",
@@ -33,12 +33,12 @@ const FAQ_ITEMS: FAQItem[] = [
   {
     question: "What documents are needed for PF Advance or withdrawal claims?",
     answer:
-      "To assist you with Employee Provident Fund (PF) claims, you will generally need your Universal Account Number (UAN), linked Aadhaar card, PAN card, and a clear photo or copy of your bank account passbook or cancelled cheque. We guide you through KYC updating, grievance lodging, and claim status tracking with complete confidentiality.",
+      "To assist you with Employee Provident Fund (PF) claims, you will generally need your Universal Account Number (UAN), linked Aadhaar card, PAN card, and a clear photo or copy of your bank account passbook or cancelled cheque. We assist with PF withdrawal, UAN activation, KYC updates, nominee updates and other PF-related services, subject to EPFO rules.",
   },
   {
-    question: "How quickly can I renew my Bike or Car Insurance policy?",
+    question: "How do I get assistance with Bike or Car Insurance?",
     answer:
-      "Policy issuance and renewal are virtually instantaneous. You can send us a photo of your existing policy copy and Vehicle Registration Certificate (RC) on WhatsApp. We compare options from reputable insurance providers, share competitive quotes, and issue your verified digital policy copy right away.",
+      "You can send us a photo of your existing policy copy and Vehicle Registration Certificate (RC) on WhatsApp. We provide assistance with bike and car insurance quotes, new policies and renewals, subject to insurer availability and policy terms.",
   },
   {
     question: "Do you assist with official IRCTC Agent Registration?",
@@ -125,16 +125,15 @@ export default function WhyUs() {
                 <ShieldCheck className="w-6 h-6" />
               </div>
               <h3 className="text-lg font-bold text-white mb-2">
-                Strict Confidentiality
+                Privacy-Conscious Service
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                Your personal IDs, banking information, UAN details, and travel documents
-                are handled with total privacy, zero data retention, and bank-grade care.
+                Your personal information is handled carefully and used only as required to provide the requested services.
               </p>
             </div>
             <div className="mt-4 pt-3 border-t border-white/5 flex items-center gap-1.5 text-xs text-emerald-300 font-semibold">
               <CheckCircle2 className="w-3.5 h-3.5" />
-              <span>100% Privacy Respected</span>
+              <span>Careful &amp; Safe Handling</span>
             </div>
           </GlowCard>
 
@@ -147,16 +146,15 @@ export default function WhyUs() {
                 <Zap className="w-6 h-6" />
               </div>
               <h3 className="text-lg font-bold text-white mb-2">
-                Fast &amp; Accurate Turnaround
+                Prompt Service Assistance
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                Whether it is an urgent Tatkal ticket booking opening, instant card
-                settlement, or electricity payment due today, we act with precision and speed.
+                Timely assistance for bookings, payments, recharges and other service requests. Processing time may vary by service provider.
               </p>
             </div>
             <div className="mt-4 pt-3 border-t border-white/5 flex items-center gap-1.5 text-xs text-rose-300 font-semibold">
               <CheckCircle2 className="w-3.5 h-3.5" />
-              <span>Immediate Digital Receipts</span>
+              <span>Timely Service Support</span>
             </div>
           </GlowCard>
 
@@ -169,16 +167,15 @@ export default function WhyUs() {
                 <Award className="w-6 h-6" />
               </div>
               <h3 className="text-lg font-bold text-white mb-2">
-                Clear &amp; Transparent Terms
+                Clear &amp; Transparent Charges
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                No hidden costs, surprise deductions, or unexpected terms. We discuss
-                everything transparently upfront before processing any request.
+                Applicable service charges and terms are communicated before processing your request.
               </p>
             </div>
             <div className="mt-4 pt-3 border-t border-white/5 flex items-center gap-1.5 text-xs text-sky-300 font-semibold">
               <CheckCircle2 className="w-3.5 h-3.5" />
-              <span>Fair &amp; Honest Practice</span>
+              <span>Clear Terms Upfront</span>
             </div>
           </GlowCard>
         </div>

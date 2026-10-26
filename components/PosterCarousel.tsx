@@ -174,20 +174,20 @@ export default function PosterCarousel() {
                   <div className="p-3 rounded-xl bg-white/5 border border-white/10 hover:border-rose-500/50 transition-all duration-200">
                     <CreditCard className="w-5 h-5 text-rose-400 mb-1.5" />
                     <span className="text-xs font-bold text-white block">
-                      Card to Bank
+                      Card Solutions
                     </span>
                     <span className="text-[10px] text-slate-400">
-                      Bill cycle rotation
+                      Payment assistance
                     </span>
                   </div>
 
                   <div className="p-3 rounded-xl bg-white/5 border border-white/10 hover:border-amber-500/50 transition-all duration-200">
                     <Car className="w-5 h-5 text-amber-400 mb-1.5" />
                     <span className="text-xs font-bold text-white block">
-                      Motor Insurance
+                      Bike &amp; Car Insurance
                     </span>
                     <span className="text-[10px] text-slate-400">
-                      Bike &amp; Car covers
+                      Quotes &amp; renewals
                     </span>
                   </div>
 
@@ -204,7 +204,7 @@ export default function PosterCarousel() {
                   <div className="p-3 rounded-xl bg-white/5 border border-white/10 hover:border-sky-500/50 transition-all duration-200">
                     <ShieldCheck className="w-5 h-5 text-sky-400 mb-1.5" />
                     <span className="text-xs font-bold text-white block">
-                      PF Assistance
+                      PF Services
                     </span>
                     <span className="text-[10px] text-slate-400">
                       Claims &amp; Services
@@ -256,15 +256,14 @@ export default function PosterCarousel() {
             >
               <div className="text-center">
                 <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-rose-500/15 border border-rose-500/30 text-xs sm:text-sm font-bold tracking-wider uppercase text-rose-300 mb-3">
-                  <span>Fast Settlements • Seamless Travel</span>
+                  <span>Transparent Process • Personal Support</span>
                 </div>
 
                 <h2 className="text-2xl sm:text-4xl md:text-5xl font-black text-white font-sans tracking-tight">
                   Credit Card Solutions &amp; Ticket Booking
                 </h2>
                 <p className="mt-2 text-xs sm:text-sm text-slate-300 max-w-lg mx-auto">
-                  Instant Credit Card to Bank Transfer, Bill Payment with Cycle
-                  Rotation, and Train, Tatkal, Flight &amp; Bus reservations.
+                  Convenient Credit Card Payment Solutions, Bill Payment &amp; Cycle Management, and Train, Tatkal, Flight &amp; Bus reservations.
                 </p>
 
                 {/* 2 Feature Cards */}
@@ -273,13 +272,13 @@ export default function PosterCarousel() {
                     <div className="flex items-center gap-2 mb-2 text-rose-400">
                       <CreditCard className="w-5 h-5" />
                       <span className="font-bold text-sm text-white">
-                        Card to Bank &amp; Bill Payment
+                        Convenient Card Payment Solutions
                       </span>
                     </div>
                     <ul className="text-xs text-slate-300 space-y-1">
-                      <li>• Direct bank account transfer</li>
-                      <li>• Bill cycle rotation assistance</li>
-                      <li>• Zero late penalty guidance</li>
+                      <li>• Eligible credit card assistance</li>
+                      <li>• Clear charges &amp; transparent processing</li>
+                      <li>• Subject to applicable bank terms</li>
                     </ul>
                   </div>
 
@@ -340,15 +339,14 @@ export default function PosterCarousel() {
             >
               <div className="text-center">
                 <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-amber-500/15 border border-amber-500/30 text-xs sm:text-sm font-bold tracking-wider uppercase text-amber-300 mb-3">
-                  <span>Protection &amp; Essential Utilities</span>
+                  <span>Reliable Guidance &amp; Essential Utilities</span>
                 </div>
 
                 <h2 className="text-2xl sm:text-4xl md:text-5xl font-black text-white font-sans tracking-tight">
                   Insurance, PF Claims &amp; Utilities
                 </h2>
                 <p className="mt-2 text-xs sm:text-sm text-slate-300 max-w-lg mx-auto">
-                  Bike &amp; Car Insurance, PF online withdrawals, BBPS electricity
-                  and gas clearance, and IRCTC agent registration support.
+                  Bike &amp; Car Insurance assistance, PF online withdrawal guidance, BBPS utility bill payments, and IRCTC agent registration support.
                 </p>
 
                 {/* 2 Grid items */}
@@ -357,13 +355,13 @@ export default function PosterCarousel() {
                     <div className="flex items-center gap-2 mb-2 text-sky-400">
                       <ShieldCheck className="w-5 h-5" />
                       <span className="font-bold text-sm text-white">
-                        Motor Insurance &amp; PF
+                        Bike &amp; Car Insurance &amp; PF
                       </span>
                     </div>
                     <ul className="text-xs text-slate-300 space-y-1">
-                      <li>• Instant Bike &amp; Car insurance policy</li>
-                      <li>• PF advance &amp; full withdrawal claim</li>
-                      <li>• KYC and UAN assistance</li>
+                      <li>• Quotes, new policies &amp; renewals</li>
+                      <li>• Subject to insurer availability &amp; terms</li>
+                      <li>• PF withdrawal &amp; EPFO claim guidance</li>
                     </ul>
                   </div>
 
